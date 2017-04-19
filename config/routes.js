@@ -12,6 +12,10 @@ module.exports = function(app) {
 		user.read(req, res);
 	});
 
+	app.get('/play', function(req, res) {
+		user.read(req, res);
+	});
+
 	app.post('/user', function(req, res) {
 		user.create(req, res);
 	})

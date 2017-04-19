@@ -10,6 +10,14 @@ app.config(function($routeProvider) {
 		templateUrl: '/dashboard.ejs',
 		controller: 'dashboardController'
 	})
+	.when('/play', {
+		templateUrl: '/play.ejs',
+		controller: 'playController'
+	})
+	.when('/question', {
+		templateUrl: '/question.ejs',
+		controller: 'dashboardController'
+	})
 	.when('/topic/:id', {
 		templateUrl: '/topic.ejs',
 		controller: 'topicController'
